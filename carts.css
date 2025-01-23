@@ -1,0 +1,191 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8eec0;
+  margin: 0;
+  padding: 0;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.blob{
+  position: absolute;
+  width:500px;
+  height:500px;
+  z-index: 1;
+}
+
+.blob-top-left{
+  filter: blur(15px);
+  top: -100px;
+  left: -100px;
+}
+
+.blob-bottom-right{
+  margin: 70px;
+  filter: blur(15px);
+  bottom: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+}
+
+.blob-middle-right {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  filter: blur(15px);
+  z-index: 1;
+  right:180px; /* Adjust to place it correctly */
+  bottom: 300px; /* Adjust to align it above bottom-right blob */
+}
+
+.container {
+  z-index: 2;
+  position: relative;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-family:'sans-serif';
+  font-size: 40px;
+  color:#802046;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  background-color: #eafcfe;
+  opacity: 80%;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-radius: 3px;
+  border-bottom: 4px solid #ddd;
+}
+
+.product-image {
+  width: 1000px;
+  height: 100px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.details {
+  flex-grow: 1;
+  margin: 50px;
+}
+
+.product-name {
+  font-weight: bold;
+  margin: 10;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  align-items: center;
+}
+
+.remove-btn {
+  background: #ff90bc;
+  color: #fff;
+  border: none;
+  margin:10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  padding-right: 45px;
+  gap: 10px;
+}
+
+.decrement-btn, 
+.increment-btn {
+    background: #ffc0d9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.decrement-btn:hover, 
+.increment-btn:hover {
+    background: #ddd;
+}
+
+
+
+.remove-btn:hover {
+  background: #e60000;
+}
+
+.discount-section {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.discount-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.apply-btn {
+  background: #8acdd7;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background: #3792ec;
+}
+
+.checkout-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.checkout-btn {
+  background: #fe8dd2;
+  color: #fff;
+  width:80%;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: #f15594;
+}

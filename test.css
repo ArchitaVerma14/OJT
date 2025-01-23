@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+}
+
+.egg {
+    width: 100px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: transform 1s ease;
+}
+
+.form {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: opacity 1s ease;
+}

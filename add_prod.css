@@ -1,0 +1,105 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for the product details */
+.box {
+    background: #ffffff;
+    padding: 20px;
+    margin: 50px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 26px;
+    color: #543a14;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Paragraph and price styling */
+p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+}
+
+p span {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Product image styling */
+img {
+    margin: 15px 0;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Button/link styling */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #543a14;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color:#dfaa5a;
+}
+
+a:nth-child(2) {
+    background-color: #f0bb78;
+}
+
+a:nth-child(2):hover {
+    background-color: #e0a04c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    div {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
